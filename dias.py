@@ -1,6 +1,5 @@
 import pandas as pd
 
 def dias(tweets):
-    maxs = tweets.max(10, ['date'], skipna=True,)
-    # df.nlargest(10, ['Weight']) 
+    maxs = tweets.max(10, ['date'], skipna=True)
     print(maxs)

@@ -4,6 +4,7 @@ import warnings
 from retweeted.py import retweeted
 from dias.py import dias
 from hashtags.py import hashtags
+from usuarios.py import usuarios
 
 warnings.filterwarnings("ignore")
 
@@ -39,3 +40,4 @@ tweets.drop_duplicates(subset=['tweetId'], inplace=True)
 retweeted(tweets)
 dias(tweets)
 hashtags(tweets)
+usuarios(tweets)
