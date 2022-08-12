@@ -2,6 +2,7 @@ import pandas as pd
 from pandas.io.json import json_normalize
 import warnings
 from retweeted.py import retweeted
+from dias.py import dias
 
 warnings.filterwarnings("ignore")
 
@@ -35,3 +36,4 @@ tweets.drop_duplicates(subset=['tweetId'], inplace=True)
 
 ###########################################################################
 retweeted(tweets)
+dias(tweets)
